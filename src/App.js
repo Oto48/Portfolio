@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Main from "./components/Main/Main";
 
@@ -22,8 +22,27 @@ function App() {
     });
   }, []);
 
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (event) => {
+    setMousePosition({ x: event.clientX, y: event.clientY });
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [mousePosition]);
+
   return (
-    <div className="bg-[#0f172a] text-white min-h-screen flex justify-between px-40 text-xl gap-16">
+    <div className="bg-[#0f172a] text-slate-200 min-h-screen flex justify-between px-40 text-xl gap-16">
+      <div
+        className="fixed inset-0"
+        style={{
+          background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+        }}
+      ></div>
       <Navbar />
       <Main />
     </div>
