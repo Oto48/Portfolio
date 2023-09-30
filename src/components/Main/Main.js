@@ -1,3 +1,7 @@
+import jsProject from "../../assets/images/jsproject.png";
+import jsProject2 from "../../assets/images/jsproject2.png";
+import phpProject from "../../assets/images/phpproject.png";
+
 const Main = () => {
   return (
     <main className="w-6/12 py-32 flex flex-col gap-40 z-50">
@@ -55,6 +59,116 @@ const Main = () => {
             </div>
           </div>
         </a>
+      </div>
+      <div id="projects">
+        <div className="flex flex-col gap-5" id="experience">
+          <h2 className="text-3xl font-bold capitalize">projects</h2>
+          <a
+            className="flex gap-5 group py-4 px-5 hover:text-teal-300 hover:bg-[#475569] hover:bg-opacity-25 rounded"
+            href="https://programmingo.com/"
+            target="blank"
+          >
+            <img
+              className="w-60 h-36 object-cover rounded"
+              src={jsProject}
+              alt="JS Project"
+            />
+            <div className="flex flex-col flex-1 gap-5">
+              <div className="flex gap-5 flex-col">
+                <div className="flex items-center gap-2 font-bold">
+                  <h3 className="capitalize">junior front-end developer</h3>
+                  <span className="border bg-white w-1 h-1 rounded-full"></span>
+                  <h3 className="capitalize">programmingo</h3>
+                </div>
+                <p className="text-slate-300">
+                  At Programmingo, I specialized in Vue.js. My role encompassed
+                  bug fixes, feature enhancements, and design improvements.
+                  Working closely with the team of experienced professionals at
+                  Programmingo, I not only mastered Vue.js but also thrived in a
+                  collaborative environment, making valuable contributions to
+                  project success.
+                </p>
+              </div>
+              <div className="flex flex-row gap-2 flex-wrap text-teal-300">
+                <p className="bg-teal-400/10 px-3 py-1 rounded-full">Vue.js</p>
+                <p className="bg-teal-400/10 px-3 py-1 rounded-full">
+                  JavaScript
+                </p>
+                <p className="bg-teal-400/10 px-3 py-1 rounded-full">SCSS</p>
+              </div>
+            </div>
+          </a>
+          <a
+            className="flex gap-5 group py-4 px-5 hover:text-teal-300 hover:bg-[#475569] hover:bg-opacity-25 rounded"
+            href="https://programmingo.com/"
+            target="blank"
+          >
+            <img
+              className="w-60 h-36 object-cover rounded"
+              src={jsProject2}
+              alt="JS Project"
+            />
+            <div className="flex flex-col flex-1 gap-5">
+              <div className="flex gap-5 flex-col">
+                <div className="flex items-center gap-2 font-bold">
+                  <h3 className="capitalize">junior front-end developer</h3>
+                  <span className="border bg-white w-1 h-1 rounded-full"></span>
+                  <h3 className="capitalize">programmingo</h3>
+                </div>
+                <p className="text-slate-300">
+                  At Programmingo, I specialized in Vue.js. My role encompassed
+                  bug fixes, feature enhancements, and design improvements.
+                  Working closely with the team of experienced professionals at
+                  Programmingo, I not only mastered Vue.js but also thrived in a
+                  collaborative environment, making valuable contributions to
+                  project success.
+                </p>
+              </div>
+              <div className="flex flex-row gap-2 flex-wrap text-teal-300">
+                <p className="bg-teal-400/10 px-3 py-1 rounded-full">Vue.js</p>
+                <p className="bg-teal-400/10 px-3 py-1 rounded-full">
+                  JavaScript
+                </p>
+                <p className="bg-teal-400/10 px-3 py-1 rounded-full">SCSS</p>
+              </div>
+            </div>
+          </a>
+          <a
+            className="flex gap-5 group py-4 px-5 hover:text-teal-300 hover:bg-[#475569] hover:bg-opacity-25 rounded"
+            href="https://programmingo.com/"
+            target="blank"
+          >
+            <img
+              className="w-60 h-36 object-cover rounded"
+              src={phpProject}
+              alt="JS Project"
+            />
+            <div className="flex flex-col flex-1 gap-5">
+              <div className="flex gap-5 flex-col">
+                <div className="flex items-center gap-2 font-bold">
+                  <h3 className="capitalize">junior front-end developer</h3>
+                  <span className="border bg-white w-1 h-1 rounded-full"></span>
+                  <h3 className="capitalize">programmingo</h3>
+                </div>
+                <p className="text-slate-300">
+                  At Programmingo, I specialized in Vue.js. My role encompassed
+                  bug fixes, feature enhancements, and design improvements.
+                  Working closely with the team of experienced professionals at
+                  Programmingo, I not only mastered Vue.js but also thrived in a
+                  collaborative environment, making valuable contributions to
+                  project success.
+                </p>
+              </div>
+              <div className="flex flex-row gap-2 flex-wrap text-teal-300">
+                <p className="bg-teal-400/10 px-3 py-1 rounded-full">Vue.js</p>
+                <p className="bg-teal-400/10 px-3 py-1 rounded-full">
+                  JavaScript
+                </p>
+                <p className="bg-teal-400/10 px-3 py-1 rounded-full">SCSS</p>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </main>
   );

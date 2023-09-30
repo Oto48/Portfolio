@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import GithubSvg from "../../assets/svg/GithubSvg";
+import LinkedinSvg from "../../assets/svg/LinkedinSvg";
+import EmailSvg from "../../assets/svg/EmailSvg";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -9,13 +12,12 @@ const Navbar = () => {
       const experienceSection = document.getElementById("experience");
       const projectsSection = document.getElementById("projects");
 
-      // if (
-      //   projectsSection &&
-      //   window.scrollY >= projectsSection.offsetTop - 130
-      // ) {
-      //   setActiveLink("projects");
-      // } else
       if (
+        projectsSection &&
+        window.scrollY >= projectsSection.offsetTop - 130
+      ) {
+        setActiveLink("projects");
+      } else if (
         experienceSection &&
         window.scrollY >= experienceSection.offsetTop - 130
       ) {
@@ -94,10 +96,24 @@ const Navbar = () => {
           projects
         </a>
       </ul>
-      <ul className="flex gap-5">
-        <p>github</p>
-        <p>linkedin</p>
-        <p>email</p>
+      <ul className="flex gap-5 items-center">
+        <a
+          href="https://github.com/Oto48"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GithubSvg fill={"#b4c8d3"} width={40} height={40} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/oto-chokhonelidze/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedinSvg fill={"#b4c8d3"} width={40} height={40} />
+        </a>
+        <a href="mailto:otchokhonelidze4@gmail.com">
+          <EmailSvg fill={"#b4c8d3"} width={40} height={40} />
+        </a>
       </ul>
     </nav>
   );
