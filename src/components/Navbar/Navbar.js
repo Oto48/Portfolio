@@ -60,21 +60,25 @@ const Navbar = () => {
   }, [activeLink]);
 
   return (
-    <nav className="flex flex-col h-screen justify-between py-32 w-6/12 sticky top-0 font-sans">
+    <nav className="flex flex-col justify-between gap-5 lg:gap-0 py-12 lg:py-32 lg:w-5/12 2xl:w-6/12 lg:h-screen lg:sticky top-0 font-sans z-50">
       <div className="flex flex-col gap-5">
-        <h1 className="text-4xl font-bold capitalize">oto tchokhonelidze</h1>
-        <h2 className="text-2xl font-bold capitalize">junior web developer</h2>
-        <p>
+        <h1 className="font-bold capitalize text-3xl 2xl:text-4xl">
+          oto tchokhonelidze
+        </h1>
+        <h2 className="font-bold capitalize text-xl 2xl:text-2xl">
+          junior web developer
+        </h2>
+        <p className="text-base 2xl:text-lg 3xl:text-xl">
           I'm a junior web developer with a strong motivation to continuously
           expand my knowledge and skills in the ever-evolving world of web
           development.
         </p>
       </div>
-      <ul className="flex flex-col gap-5 capitalize">
+      <ul className="capitalize hidden lg:flex flex-col gap-7 text-lg 2xl:text-xl">
         <a href="#about" className="flex gap-5 items-center">
           <span
             className={`border h-0 border-white block transition-width duration-200 ${
-              activeLink === "about" ? "active w-32" : "w-16"
+              activeLink === "about" ? "w-28 3xl:w-32" : "w-12 3xl:w-16"
             }`}
           ></span>
           about
@@ -82,7 +86,7 @@ const Navbar = () => {
         <a href="#experience" className="flex gap-5 items-center">
           <span
             className={`border h-0 border-white block transition-width duration-200 ${
-              activeLink === "experience" ? "active w-32" : "w-16"
+              activeLink === "experience" ? "w-28 3xl:w-32" : "w-12 3xl:w-16"
             }`}
           ></span>
           experience
@@ -90,7 +94,7 @@ const Navbar = () => {
         <a href="#projects" className="flex gap-5 items-center">
           <span
             className={`border h-0 border-white block transition-width duration-200 ${
-              activeLink === "projects" ? "active w-32" : "w-16"
+              activeLink === "projects" ? "w-28 3xl:w-32" : "w-12 3xl:w-16"
             }`}
           ></span>
           projects

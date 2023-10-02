@@ -36,7 +36,7 @@ function App() {
   }, [mousePosition]);
 
   return (
-    <div className="bg-[#0f172a] text-slate-200 min-h-screen flex justify-between px-40 text-xl gap-16">
+    <div className="bg-[#0f172a] text-slate-200 min-h-screen flex flex-col lg:flex-row justify-between px-20 2xl:px-28 3xl:px-40 text-xl lg:gap-14 2xl:gap-16">
       <div
         className="fixed inset-0"
         style={{
