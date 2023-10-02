@@ -2,7 +2,6 @@ import jsProject from "../../assets/images/jsproject.png";
 import jsProject2 from "../../assets/images/jsproject2.png";
 import phpProject from "../../assets/images/phpproject.png";
 import reactProject from "../../assets/images/reactproject.png";
-import angularProject from "../../assets/images/angularproject.png";
 import sassProject from "../../assets/images/sassproject.png";
 
 const Main = () => {
