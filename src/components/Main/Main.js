@@ -1,7 +1,8 @@
+import reactProject from "../../assets/images/reactproject.png";
+import angularProject from "../../assets/images/angularproject.png";
 import jsProject from "../../assets/images/jsproject.png";
 import jsProject2 from "../../assets/images/jsproject2.png";
 import phpProject from "../../assets/images/phpproject.png";
-import reactProject from "../../assets/images/reactproject.png";
 import sassProject from "../../assets/images/sassproject.png";
 
 const Main = () => {
@@ -81,7 +82,7 @@ const Main = () => {
                   movie app
                 </h3>
                 <p className="text-slate-300 text-base 2xl:text-lg">
-                  This is a full-stack movie app built with React and Node.js.
+                  This is a Full-stack movie app built with React and Node.js.
                   It uses the TMDB API to get movie information. The website has
                   three main pages: one for trending movies and TV shows,
                   another for movies, and one for TV shows. Users can register,
@@ -102,6 +103,41 @@ const Main = () => {
                 </p>
                 <p className="bg-teal-400/10 px-3 py-1 rounded-full capitalize">
                   tailwind CSS
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            className="flex flex-col xl:flex-row gap-5 group py-4 px-5 hover:text-teal-300 hover:bg-[#475569] hover:bg-opacity-25 rounded"
+            href="https://oto-video-games-project.netlify.app/"
+            target="blank"
+          >
+            <img
+              className="xl:w-44 2xl:w-60 h-80 lg:h-52 xl:h-32 object-cover rounded"
+              src={angularProject}
+              alt="JS Project"
+            />
+            <div className="flex flex-col flex-1 gap-5">
+              <div className="flex gap-5 flex-col">
+                <h3 className="capitalize font-bold text-lg 3xl:text-xl">
+                  video games app
+                </h3>
+                <p className="text-slate-300 text-base 2xl:text-lg">
+                  This is a Front-end Video Games App built with Angular and
+                  SCSS. It uses RAWG Video Games Database to get video game
+                  information. The website has two main pages: one for video
+                  games list and one for selected video game information. The
+                  App includes search filter. Users can also sort video games
+                  based on rating, release date, last updated, etc.
+                </p>
+              </div>
+              <div className="flex flex-row gap-2 flex-wrap text-teal-300 text-lg">
+                <p className="bg-teal-400/10 px-3 py-1 rounded-full capitalize">
+                  angular
+                </p>
+                <p className="bg-teal-400/10 px-3 py-1 rounded-full capitalize">
+                  SCSS
                 </p>
               </div>
             </div>
@@ -186,10 +222,10 @@ const Main = () => {
                   PHP project
                 </h3>
                 <p className="text-slate-300 text-base 2xl:text-lg">
-                  This is a PHP backend application. Users can access a products
-                  page and a form page for adding new products. Additionally,
-                  users have the ability to delete one or multiple products as
-                  needed.
+                  This is a PHP Back-end application. Users can access a
+                  products page and a form page for adding new products.
+                  Additionally, users have the ability to delete one or multiple
+                  products as needed.
                 </p>
               </div>
               <div className="flex flex-row gap-2 flex-wrap text-teal-300 text-lg">
