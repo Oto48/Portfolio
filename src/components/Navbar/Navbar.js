@@ -27,12 +27,6 @@ const Navbar = () => {
         window.scrollY >= aboutSection.offsetTop - 130
       ) {
         setActiveLink("about");
-        console.log(
-          "this is about ===>>>" + aboutSection.offsetTop,
-          "this is experience ===>>>" + experienceSection.offsetTop
-          // "this is project ===>>>" + projectsSection.offsetTop
-        );
-        console.log("this is window scroll ===>>>" + window.scrollY);
       } else {
         setActiveLink("");
       }
