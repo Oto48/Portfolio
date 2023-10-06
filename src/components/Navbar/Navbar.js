@@ -69,30 +69,57 @@ const Navbar = () => {
         </p>
       </div>
       <ul className="capitalize hidden lg:flex flex-col gap-7 text-lg 2xl:text-xl">
-        <a href="#about" className="flex gap-5 items-center">
-          <span
-            className={`border h-0 border-white block transition-width duration-200 ${
-              activeLink === "about" ? "w-28 3xl:w-32" : "w-12 3xl:w-16"
+        <div className="flex">
+          <a
+            href="#about"
+            className={`group flex gap-5 items-center hover:text-white ${
+              activeLink === "about" ? "" : "text-slate-400"
             }`}
-          ></span>
-          about
-        </a>
-        <a href="#experience" className="flex gap-5 items-center">
-          <span
-            className={`border h-0 border-white block transition-width duration-200 ${
-              activeLink === "experience" ? "w-28 3xl:w-32" : "w-12 3xl:w-16"
+          >
+            <span
+              className={`border h-0 transition-width group-hover:border-white group-hover:w-28 3xl:group-hover:w-32 duration-200 ${
+                activeLink === "about"
+                  ? "w-28 3xl:w-32"
+                  : "w-12 3xl:w-16 border-slate-400"
+              }`}
+            ></span>
+            about
+          </a>
+        </div>
+        <div className="flex">
+          <a
+            href="#experience"
+            className={`group flex gap-5 items-center hover:text-white ${
+              activeLink === "experience" ? "" : "text-slate-400"
             }`}
-          ></span>
-          experience
-        </a>
-        <a href="#projects" className="flex gap-5 items-center">
-          <span
-            className={`border h-0 border-white block transition-width duration-200 ${
-              activeLink === "projects" ? "w-28 3xl:w-32" : "w-12 3xl:w-16"
+          >
+            <span
+              className={`border h-0 transition-width group-hover:border-white group-hover:w-28 3xl:group-hover:w-32 duration-200 ${
+                activeLink === "experience"
+                  ? "w-28 3xl:w-32"
+                  : "w-12 3xl:w-16 border-slate-400"
+              }`}
+            ></span>
+            experience
+          </a>
+        </div>
+        <div className="flex">
+          <a
+            href="#projects"
+            className={`group flex gap-5 items-center hover:text-white ${
+              activeLink === "projects" ? "" : "text-slate-400"
             }`}
-          ></span>
-          projects
-        </a>
+          >
+            <span
+              className={`border h-0 transition-width group-hover:border-white group-hover:w-28 3xl:group-hover:w-32 duration-200 ${
+                activeLink === "projects"
+                  ? "w-28 3xl:w-32"
+                  : "w-12 3xl:w-16 border-slate-400"
+              }`}
+            ></span>
+            projects
+          </a>
+        </div>
       </ul>
       <ul className="flex gap-5 items-center">
         <a
@@ -100,17 +127,17 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GithubSvg fill={"#b4c8d3"} width={40} height={40} />
+          <GithubSvg fill={"#b4c8d3"} width={35} height={35} />
         </a>
         <a
           href="https://www.linkedin.com/in/oto-chokhonelidze/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LinkedinSvg fill={"#b4c8d3"} width={40} height={40} />
+          <LinkedinSvg fill={"#b4c8d3"} width={35} height={35} />
         </a>
         <a href="mailto:otchokhonelidze4@gmail.com">
-          <EmailSvg fill={"#b4c8d3"} width={40} height={40} />
+          <EmailSvg fill={"#b4c8d3"} width={35} height={35} />
         </a>
       </ul>
     </nav>
