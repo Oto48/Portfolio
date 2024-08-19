@@ -1,4 +1,6 @@
 import Project from "../Project/Project";
+import Experience from "../Experience/Experience";
+import gepartsProject from "../../assets/images/geparts.png";
 import reactProject from "../../assets/images/reactproject.png";
 import angularProject from "../../assets/images/angularproject.png";
 import jsProject from "../../assets/images/jsproject.png";
@@ -28,48 +30,70 @@ const Main = () => {
       </div>
       <div className="flex flex-col gap-5" id="experience">
         <h2 className="text-3xl font-bold capitalize">experience</h2>
-        <a
-          className="flex flex-col xl:flex-row gap-5 group py-4 px-5 hover:text-teal-300 hover:bg-[#475569] hover:bg-opacity-25 rounded"
-          href="https://programmingo.com/"
-          target="blank"
-        >
-          <div className="flex items-center h-7 text-slate-400 text-base 2xl:text-lg capitalize gap-2">
-            <p>january</p>
-            <span className="border h-0 border-slate-400 w-1 2xl:w-3 block"></span>
-            <p>may 2023</p>
-          </div>
-          <div className="flex flex-col flex-1 gap-5">
-            <div className="flex gap-5 flex-col">
-              <div className="flex items-center gap-2 font-bold text-base text-lg lg:text-base 2lx:text-lg 3xl:text-xl">
-                <h3 className="capitalize">junior front-end developer</h3>
-                <span>&#183;</span>
-                <h3 className="capitalize">programmingo</h3>
-              </div>
-              <p className="text-slate-300 text-base 2xl:text-lg">
-                At Programmingo, I specialized in Vue.js. My role encompassed
-                bug fixes, feature enhancements, and design improvements.
-                Working closely with the team of experienced professionals at
-                Programmingo, I not only mastered Vue.js but also thrived in a
-                collaborative environment, making valuable contributions to
-                project success.
-              </p>
-            </div>
-            <div className="flex flex-row gap-2 flex-wrap text-teal-300 text-lg">
-              <p className="bg-teal-400/10 px-3 py-1 rounded-full">Vue.js</p>
-              <p className="bg-teal-400/10 px-3 py-1 rounded-full">
-                JavaScript
-              </p>
-              <p className="bg-teal-400/10 px-3 py-1 rounded-full">SCSS</p>
-            </div>
-          </div>
-        </a>
+        <Experience
+          url="https://programmingo.com/"
+          startDate="january"
+          endDate="jun 2023"
+          position="junior front-end developer"
+          company="programmingo"
+          description={`
+          At Programmingo, I specialized in Vue.js. My role encompassed
+          bug fixes, feature enhancements, and design improvements.
+          Working closely with the team of experienced professionals at
+          Programmingo, I not only mastered Vue.js but also thrived in a
+          collaborative environment, making valuable contributions to
+          project success.
+          `}
+          skills={["vue.js", "JavaScript", "SCSS", "git", "GitHub", "jira"]}
+        />
+        <Experience
+          url="https://geparts.ge/home"
+          startDate="january 2024"
+          endDate="present"
+          position="full-stack developer"
+          company="geparts"
+          description={`
+          At Geparts, I expanded my expertise by taking on a full-stack developer role,
+          where I worked extensively with both Vue.js on the front end and Laravel on
+          the back end. My responsibilities included developing new features,
+          maintaining existing systems, and ensuring seamless integration between
+          the front-end and back-end components. Collaborating closely with
+          the development team, I played a key role in optimizing performance
+          and enhancing user experience, contributing to the overall success of the platform.
+          `}
+          skills={[
+            "Vue.js",
+            "JavaScript",
+            "laravel",
+            "PHP",
+            "Tailwind CSS",
+            "git",
+            "GitHub",
+            "jira",
+            "figma",
+          ]}
+        />
       </div>
       <div id="projects">
         <div className="flex flex-col gap-5" id="experience">
           <h2 className="text-3xl font-bold capitalize">projects</h2>
           <Project
-            url={"https://oto-react-movie-app.netlify.app/"}
-            title={"movie app"}
+            url="https://geparts.ge/home"
+            title="geparts.ge"
+            image={gepartsProject}
+            description={`Geparts is an advanced e-commerce platform designed for the seamless
+            ordering of auto parts. The platform allows users to register, browse, 
+            and purchase a wide range of automotive products. I contributed to this project by
+            leveraging Vue.js for the front-end, ensuring a responsive and dynamic user
+            interface, while utilizing Laravel for the back-end for data processing. 
+            This project showcases my ability to integrate front-end and back-end technologies
+            to deliver a robust and user-friendly experience.`}
+            technologies={["vue.js", "laravel", "tailwind css"]}
+          />
+
+          <Project
+            url="https://oto-react-movie-app.netlify.app/"
+            title="movie app"
             image={reactProject}
             description={`This is a Full-stack movie app built with React and Node.js. It uses
             the TMDB API to get movie information. The website has three main
@@ -81,8 +105,8 @@ const Main = () => {
           />
 
           <Project
-            url={"https://oto-video-games-project.netlify.app/"}
-            title={"video games app"}
+            url="https://oto-video-games-project.netlify.app/"
+            title="video games app"
             image={angularProject}
             description={`This is a Front-end Video Games App built with Angular and
             SCSS. It uses RAWG Video Games Database to get video game
@@ -94,8 +118,8 @@ const Main = () => {
           />
 
           <Project
-            url={"https://oto48.github.io/ecommerce-product-page-main/"}
-            title={"E-commerce product page"}
+            url="https://oto48.github.io/ecommerce-product-page-main/"
+            title="E-commerce product page"
             image={jsProject}
             description={`This is a responsive e-commerce product page project created
             using JavaScript and Tailwind CSS. It displays a single
@@ -105,8 +129,8 @@ const Main = () => {
           />
 
           <Project
-            url={"https://oto-quizz-app.netlify.app/"}
-            title={"quizz app"}
+            url="https://oto-quizz-app.netlify.app/"
+            title="quizz app"
             image={jsProject2}
             description={`This is a straightforward quiz app that presents you with four
             questions. After you've answered them, the app provides your
@@ -115,8 +139,8 @@ const Main = () => {
           />
 
           <Project
-            url={"https://oto-php-project.000webhostapp.com/"}
-            title={"PHP project"}
+            url="https://oto-php-project.000webhostapp.com/"
+            title="PHP project"
             image={phpProject}
             description={`This is a PHP Back-end application. Users can access a
             products page and a form page for adding new products.
@@ -126,8 +150,8 @@ const Main = () => {
           />
 
           <Project
-            url={"https://fox-project.netlify.app/"}
-            title={"SCSS project"}
+            url="https://fox-project.netlify.app/"
+            title="SCSS project"
             image={scssProject}
             description={`This project is built using SCSS, with a focus solely on SCSS
             for styling. It is designed to be responsive, adapting
