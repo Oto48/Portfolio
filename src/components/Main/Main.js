@@ -7,6 +7,7 @@ import jsProject from "../../assets/images/jsproject.png";
 import jsProject2 from "../../assets/images/jsproject2.png";
 import phpProject from "../../assets/images/phpproject.png";
 import scssProject from "../../assets/images/scssproject.png";
+import shopApp from "../../assets/images/shop-app.png";
 
 const Main = () => {
   return (
@@ -126,6 +127,18 @@ const Main = () => {
             product with multiple images. Customers can add this product
             to their cart and remove it when needed.`}
             technologies={["JavaScript", "TailwindCSS"]}
+          />
+
+          <Project
+            url="https://react-graphql-shop-app.netlify.app/all"
+            title="FullStack Shop App with React PHP and GraphQL"
+            image={shopApp}
+            description={`This is a full-stack e-commerce application built using
+              React for the frontend and PHP for the backend. It features a product
+              listing page with category-based filtering, a dynamic shopping cart,
+              and user authentication. Customers can add, update, and remove items
+              from their cart while viewing the total price in real-time.`}
+            technologies={["React", "PHP", "GraphQL", "SCSS"]}
           />
 
           <Project
