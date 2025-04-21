@@ -1,6 +1,10 @@
 import Project from "../Project/Project";
 import Experience from "../Experience/Experience";
 import gepartsProject from "../../assets/images/geparts.png";
+import languageBearProject from "../../assets/images/language-bear.png";
+import maliboProject from "../../assets/images/malibo.png";
+import buyzoneProject from "../../assets/images/buyzone.png";
+import openKulturProject from "../../assets/images/open-kultur.png";
 import reactProject from "../../assets/images/reactproject.png";
 import angularProject from "../../assets/images/angularproject.png";
 import jsProject from "../../assets/images/jsproject.png";
@@ -32,22 +36,6 @@ const Main = () => {
       <div className="flex flex-col gap-5" id="experience">
         <h2 className="text-3xl font-bold capitalize">experience</h2>
         <Experience
-          url="https://programmingo.com/"
-          startDate="january"
-          endDate="jun 2023"
-          position="junior front-end developer"
-          company="programmingo"
-          description={`
-          At Programmingo, I specialized in Vue.js. My role encompassed
-          bug fixes, feature enhancements, and design improvements.
-          Working closely with the team of experienced professionals at
-          Programmingo, I not only mastered Vue.js but also thrived in a
-          collaborative environment, making valuable contributions to
-          project success.
-          `}
-          skills={["vue.js", "JavaScript", "SCSS", "git", "GitHub", "jira"]}
-        />
-        <Experience
           url="https://geparts.ge/home"
           startDate="january 2024"
           endDate="present"
@@ -74,6 +62,23 @@ const Main = () => {
             "figma",
           ]}
         />
+
+        <Experience
+          url="https://programmingo.com/"
+          startDate="january"
+          endDate="jun 2023"
+          position="junior front-end developer"
+          company="programmingo"
+          description={`
+          At Programmingo, I specialized in Vue.js. My role encompassed
+          bug fixes, feature enhancements, and design improvements.
+          Working closely with the team of experienced professionals at
+          Programmingo, I not only mastered Vue.js but also thrived in a
+          collaborative environment, making valuable contributions to
+          project success.
+          `}
+          skills={["vue.js", "JavaScript", "SCSS", "git", "GitHub", "jira"]}
+        />
       </div>
       <div id="projects">
         <div className="flex flex-col gap-5" id="experience">
@@ -90,6 +95,53 @@ const Main = () => {
             This project showcases my ability to integrate front-end and back-end technologies
             to deliver a robust and user-friendly experience.`}
             technologies={["vue.js", "laravel", "tailwind css"]}
+          />
+
+          <Project
+            url="https://languagebear.com/"
+            title="Language Bear"
+            image={languageBearProject}
+            description={`Language Bear is a platform where clients and linguists
+              can register and work together on language-related projects.
+              Clients place orders, and linguists handle the tasks.
+              I worked on the frontend of this platform, mainly using Vue.js.
+              My role included building new components, updating existing ones,
+              and working with forms and APIs to make sure everything functioned
+              smoothly.`}
+            technologies={["vue.js", "sass"]}
+          />
+
+          <Project
+            url="https://malibo.ge/"
+            title="malibo.ge"
+            image={maliboProject}
+            description={`Malibo is an e-commerce platform that sells household items online.
+              I mainly worked on the frontend of the platform, but I also contributed to the backend.
+              On the backend, I worked with the database, handled user registration and login functionality,
+              and managed cookies and sessions.`}
+            technologies={["PHP", "JQuery", "Bootstrap & css"]}
+          />
+
+          <Project
+            url="https://buyzone.ge/"
+            title="buyzone.ge"
+            image={buyzoneProject}
+            description={`Buyzone is an e-commerce platform focused on selling electronics like mobile phones,
+              earphones, and laptops. Just like Malibo, the project was built using HTML, CSS, Bootstrap, jQuery,
+              and PHP. I worked on both the frontend and backend — creating and updating pages, handling forms, 
+              and making sure the UI was user-friendly. On the backend, I worked with the database, implemented 
+              user registration and login features, and managed cookies and sessions to maintain user state.`}
+            technologies={["PHP", "JQuery", "Bootstrap & css"]}
+          />
+
+          <Project
+            url="https://www.open-kultur.ch/"
+            title="open-kultur.ch"
+            image={openKulturProject}
+            description={`open-kultur.ch was built using Redaxo CMS, along with HTML, 
+              SASS, Bootstrap, and jQuery.. it involved minimal PHP and was more focused on layout, design,
+              and CMS integration.`}
+            technologies={["Redaxo (PHP-based CMS)", "JQuery", "Bootstrap & sass"]}
           />
 
           <Project
