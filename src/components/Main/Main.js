@@ -38,7 +38,7 @@ const Main = () => {
         <Experience
           url="https://geparts.ge/home"
           startDate="january 2024"
-          endDate="present"
+          endDate="january 2025"
           position="full-stack developer"
           company="geparts"
           description={`
